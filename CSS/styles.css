@@ -1,0 +1,75 @@
+/* ==================== RESET CSS ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== MOBILE FIRST - BASE (Mobile par défaut) ==================== */
+
+/* ==================== BODY ==================== */
+body {
+    font-family: Georgia, serif;
+    background: hsla(0, 0%, 96%, 0.216);
+    line-height: 1.6;
+}
+
+/* ==================== HEADER ==================== */
+.site-header {
+    background-color: aliceblue;
+    
+
+/* Mobile: Layout vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.logo img {
+    width: 19px;
+    height: auto;
+    margin: 10px;
+}
+
+
+/* Navigation - Mobile: Vertical */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.nav-menu a {
+text-decoration: none;
+}
+
+.btn { 
+    padding: 10px 25px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+    }
+
+ 
+    
+    .header-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        border-radius: 5px;
+    }

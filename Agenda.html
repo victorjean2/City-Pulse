@@ -17,9 +17,9 @@
         <nav aria-label="Navigation principale">
             <ul class="nav-menu">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="Article.html">Articles</a></li>
-                <li><a href="Agenda.html"></a>Agenda</li>
-                <li><a href="Contact.html"></a>Contact</li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Agenda.html">Agenda</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -27,8 +27,93 @@
         </div>
     </header>
 
+    <body>
+        <main>
+            <section class="agenda-container">
+                <h3>Agenda</h3>
+                <p>Le rendez-vous du territoire: culture, sport, ateliers et événements associatifs.</p>
+                <div class="filters">
+                    <p>Période</p>
+                    <fieldset data-filter="Cette semaine">Cette semaine</fieldset>
+                    <p>Type d'événement</p>
+                    <fieldset data-filter="All">All</fieldset>
+                    <br>
+                    <br>
+                    <div class="agenda-cards">
+                        <article class="card"><button class="btn" aria-label="Concert">Concert</button>
+                            <h4>Évenement: Concert</h4>
+                            <p>Sam, 27 déc. • 18h30 • Salles des fêtes</p>
+                            <p>Soirée acoustique et chants de saison, entrée libre.</p>
+                        </article>
 
-    
+                        <article class="card"><button class="btn" aria-label="Marché">Marché</button>
+                            <h4>Évenement: Marché</h4>
+                            <p>Dim, 28 déc. • 10h00 • Place centrale</p>
+                            <p>Producteurs, idées de paniers, dégustations locales.</p>
+                        </article>
+
+                        <article class="card"><button class="btn" aria-label="Atelier">Atelier</button>
+                            <h4>Évenement: Atelier</h4>
+                            <p>Lun, 29 déc. • 14h00 • Médiathèque</p>
+                            <p>Initiationn à la lecture à voix haute, tout public.</p>
+                        </article>
+
+                        <article class="card"><button class="btn" aria-label="Sport">Sport</button>
+                            <h4>Évenement: Sport</h4>
+                            <p>Mar, 30 déc. • 09h30 • Gymnase</p>
+                            <p>Séance douce: mobilité, posture, respiration</p>
+                        </article>
+
+                        <article class="card"><button class="btn" aria-label="Exposition">Exposition</button>
+                            <h4>Évenement: Exposition</h4>
+                            <p>Sam, 03 janv. • 15h00 • Espace culturell</p>
+                            <p>Visite commentée: artistes locaux, formats courts.</p>
+                        </article>
+
+                        <article class="card"><button class="btn" aria-label="Culture">Culture</button>
+                            <h4>Évenement: Culture</h4>
+                            <p>Dim, 04 janv. • 11h00 • Centre ville</p>
+                            <p>Balade patrimoniale: découverte et anecdotes.</p>
+                        </article>
+
+                        <p>Balade patrimoniale: découverte et anecdotes;</p>
+                        <article class="card"><button class="btn" aria-label="Atelier">Atelier</button>
+                            <h4>Évenement: Concert</h4>
+                            <p>Lun, 05 janv. • 18h00 • Maison des associations</p>
+                            <p>Atelier citoyen: idées pour la prochaine édition. </p>
+                        </article>
+
+                        <article class="card"><button class="btn" aria-label="Culture">Culture</button>
+                            <h4>Évenement: Culture</h4>
+                            <p>Mar, 06 janv. • 20h00 • Cinéma</p>
+                            <p>Projéction-débat: film documentaire, échanges</p>
+                        </article>
+                    </div>
+                    <div class="agenda-button">
+                        <button class="btn" aria-label="Préc.">Préc.</button>
+                        <button class="btn" aria-label="Semaine">Semaine</button>
+                        <button class="btn" aria-label="Suiv.">Suiv.</button>
+                    </div>
+            </section>
+            <section class="agenda-side-container">
+                <div class="side-cards">
+                    <article class="side-card">
+                        <h5>Conseil pratique</h5>
+                        <p>Pensez à vérifier les horaires sur place en période de fêtes. Certains lieux adaptent leur
+                            accueil.</p>
+                    </article>
+                    <article class="side-card">
+                        <h5>Proposer un événement</h5>
+                        <p>Association, commerçant, initiative locale: envoyez les informations à la rédaction.</p>
+                        <button class="btn" aria-label="Proposer un événement">Proposer un événement</button>
+                    </article>
+                </div>
+
+
+            </section>
+        </main>
+    </body>
+
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-content">
@@ -41,18 +126,18 @@
                 <h3 id="footer-rubrique">Rubrique</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="Article.html">Articles</a></li>
-                    <li><a href="Agenda.html"></a>Agenda</li>
-                    <li><a href="Contact.html"></a>Contact</li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a href="Agenda.html">Agenda</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
 
             <nav class="footer-column" aria-labelledby="footer-redaction">
                 <h3 id="footer-redaction">Rédaction</h3>
                 <ul>
-                    <li><a href="#proposer une info">Poposer une info</a></li>
-                    <li><a href="#signaler une erreur">Signaler une erreur</a></li>
-                    <li><a href="#Charte de publication"></a>Charte de publication</li>
+                    <li><a href="proposer une info">Poposer une info</a></li>
+                    <li><a href="signaler une erreur">Signaler une erreur</a></li>
+                    <li><a href="Charte de publication">Charte de publication</a></li>
                 </ul>
             </nav>
         </div>
