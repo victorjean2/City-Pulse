@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Pulse</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -27,14 +27,127 @@
         </div>
     </header>
 
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="Images/logo.svg" alt="Logo CityPulse">
+            CityPulse
+        </div>
+        <nav aria-label="Navigation principale">
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Agenda.html">Agenda</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn-header">Proposer une info</button>
+        </div>
+    </header>
 
-    
+    <!-- MAIN CONTENT -->
+    <main class="contact-main">
+        <div class="contact-container">
+            <!-- TITRE ET DESCRIPTION -->
+            <section class="contact-header">
+                <h1>Contact / Proposer une info</h1>
+                <p>Vous avez une information locale, un événement ou une correction à signaler ? Envoyez-nous un
+                    message. Les champs marqués "obligatoire" doivent être renseignés.</p>
+            </section>
+
+            <!-- FORMULAIRE ET SIDEBAR -->
+            <div class="contact-wrapper">
+                <!-- FORMULAIRE -->
+                <section class="contact-form-section">
+                    <form class="contact-form">
+                        <!-- Nom -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom (facultatif)</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom">
+                            <p class="form-hint">Indiquez le nom que nous pouvons citer si vous le souhaitez.</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email (obligatoire)</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                aria-required="true">
+                            <p class="form-hint">Nous l'utilisons uniquement pour vous répondre.</p>
+                        </div>
+
+                        <!-- Type de message -->
+                        <div class="form-group">
+                            <label for="message-type" class="form-label">Type de message (obligatoire)</label>
+                            <select id="message-type" name="message-type" class="form-select" required
+                                aria-required="true">
+                                <option value="">Choisir...</option>
+                                <option value="info">Information locale</option>
+                                <option value="event">Événement à proposer</option>
+                                <option value="correction">Correction</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message (obligatoire)</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="8" required
+                                aria-required="true"
+                                placeholder="Décrivez l'information : qui ? quoi ? où ? quand ? comment ?"></textarea>
+                            <p class="form-hint">Plus c'est précis, plus c'est simple à vérifier et à publier.</p>
+                        </div>
+
+                        <!-- Checkbox consentement -->
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" class="checkbox-input" required
+                                aria-required="true">
+                            <label for="consent" class="checkbox-label">
+                                J'accepte la collecte de mes données personnelles afin d'être recontacté au sujet de
+                                ce message (obligatoire)
+                            </label>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <div class="form-group form-actions">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                            <p class="form-note">Envoi non fonctionnel (TP sans back-end).</p>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- SIDEBAR -->
+                <aside class="contact-sidebar">
+                    <!-- Coordonnées rédaction -->
+                    <div class="sidebar-card">
+                        <h3>Coordonnées rédaction</h3>
+                        <h4>CityPulse</h4>
+                        <p><strong>Rédaction locale</strong> — réponses sous 48h ouvrées.</p>
+                        <p><strong>Adresse :</strong> 12, rue des Éditions, 89000 (exemple)</p>
+                        <p><strong>Horaires :</strong> lun-ven, 9h-12h / 14h-17h</p>
+                    </div>
+
+                    <!-- Avant d'envoyer -->
+                    <div class="sidebar-card">
+                        <h3>Avant d'envoyer</h3>
+                        <ul class="tips-list">
+                            <li>Donnez une date et un lieu précis.</li>
+                            <li>Ajoutez un contact si l'événement nécessite une confirmation.</li>
+                            <li>Indiquez si la publication est urgente.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-content">
             <nav class="footer-column" aria-labelledby="footer-about">
                 <h3 id="footer-about">CityPulse</h3>
-                <p>Le mini média local qui met en avant les infos utiles, les iniatives et l'agenda du territoire</p>
+                <p>Le mini média local qui met en avant les infos utiles, les initiatives et l'agenda du territoire.
+                </p>
             </nav>
 
             <nav class="footer-column" aria-labelledby="footer-rubrique">
@@ -50,20 +163,19 @@
             <nav class="footer-column" aria-labelledby="footer-redaction">
                 <h3 id="footer-redaction">Rédaction</h3>
                 <ul>
-                    <li><a href="#proposer une info">Poposer une info</a></li>
-                    <li><a href="#signaler une erreur">Signaler une erreur</a></li>
-                    <li><a href="#Charte de publication">Charte de publication</a></li>
+                    <li><a href="#">Proposer une info</a></li>
+                    <li><a href="#">Signaler une erreur</a></li>
+                    <li><a href="#">Charte de publication</a></li>
                 </ul>
             </nav>
         </div>
         <div class="footer-bottom">
-            <p>
-                &copy; 2025 CityPulse- UI statique (TP HTML/CSS).
-                <a href="#confidentialite">Politique de confidentialité</a> |
-                <a href="#conditions">Conditions d'utilisation</a>
-            </p>
+            <p>&copy; 2025 CityPulse - UI statique (TP HTML/CSS).</p>
         </div>
     </footer>
+
+
+
 </body>
 
 </html>
